@@ -1,0 +1,24 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Register to meet aliens" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Register to meet aliens</h1>
+    <p class="govuk-body">Use this service to register your interest in meeting aliens that have arrived on Earth.</p>
+    <p class="govuk-body">You will need:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>your contact details</li>
+      <li>proof of your identity</li>
+      <li>reason why you want to meet aliens</li>
+    </ul>
+    <p class="govuk-body">It takes around <strong>5 minutes</strong> to complete.</p>
+    {{ govukButton({
+      text: "Start now",
+      href: "/over-18",
+      isStartButton: true
+    }) }}
+  </div>
+</div>
+{% endblock %}
